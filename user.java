@@ -8,14 +8,9 @@ public class user {
 	String name;
 	similarity[] sim;
 	double mean;
-	
 	anime[] anime;
-//	HashMap<String, Double> hanime;
 	HashSet<String> seen ;
-	
 	persona[] persona;
-//	HashMap<String, Double> hpersona;
-	
 	
 	
 	//Constructors
