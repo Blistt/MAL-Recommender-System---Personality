@@ -317,7 +317,7 @@ public class Evaluator {
 			File file = new File("personalityData.txt");
 			PrintWriter writer = new PrintWriter(file);
 			
-			//Creates an array of animes names by reading them from a textfile	
+			//Creates an array of anime names by reading them from a textfile	
 			String[] aList = reader("animes.txt");
 			
 			//Creates an array of personality scores by reading them from a textfile	
@@ -330,13 +330,13 @@ public class Evaluator {
 			user[] users = namer(uList, aList, pList);
 			
 			//Extracts users' ratings from text file and populates utility matrix
-			users = rater(users, "FilteredMatrix.txt", "FilteredMatrix.txt", "PersonalityScores.txt");
+			users = rater(users, "unpredidctedMatrix.txt", "predictedMatrix.txt", "PersonalityScores.txt");
 				
 			//Calculates means of all users
-//			meaner(users);
+			meaner(users);
 			
 			//Evaluates each user
-//			evaluator(users);	
+			evaluator(users);	
 			
 				
 			writer.close();
